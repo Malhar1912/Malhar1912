@@ -1,244 +1,138 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0a00,30:3d1a00,60:6b3a1f,100:c8963e&height=240&section=header&text=Malhar%20Pangarkar&fontSize=58&fontColor=f5e6c8&fontAlignY=40&desc=∿%20where%20mathematics%20meets%20something%20that%20feels%20like%20longing%20∿&descAlignY=62&descSize=14&animation=fadeIn&fontAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a14,40:0d1225,70:1a1a3e,100:2a1a3e&height=200&section=header&text=Malhar%20Pangarkar&fontSize=54&fontColor=b8c5d6&fontAlignY=42&desc=I%20have%20tried%20to%20be%20what%20you%20wanted.%20I%20am%20what%20I%20am.&descAlignY=62&descSize=13&animation=fadeIn" width="100%"/>
 
 </div>
 
-<br/>
-
 <div align="center">
 
-<a href="https://github.com/Malhar1912/NATO"><img src="https://img.shields.io/badge/✦%20nato--opt%20on%20PyPI-install%20it-c8963e?style=for-the-badge&labelColor=2a1200&color=c8963e" /></a>
-&nbsp;
-<a href="mailto:malharpangarkar08@gmail.com"><img src="https://img.shields.io/badge/✦%20reach%20me-malharpangarkar08-c8963e?style=for-the-badge&labelColor=2a1200&color=c8963e" /></a>
-
-</div>
-
-<br/>
-
-<div align="center">
-
-```
-          ❝  some people write about love.
-               i write about constrained optimization,
-                 hyperbolic manifolds,
-                   and the things computers
-                     can never know.  ❞
-```
+[![](https://img.shields.io/badge/pip%20install%20nato--opt-PyPI-0d0d1f?style=flat-square&labelColor=0d0d1f&color=4a3f6b)](https://pypi.org/project/nato-opt/)
+[![](https://img.shields.io/badge/malharpangarkar08%40gmail.com-contact-0d0d1f?style=flat-square&labelColor=0d0d1f&color=4a3f6b)](mailto:malharpangarkar08@gmail.com)
 
 </div>
 
 ---
 
-<br/>
+## Published
 
-## ✦ &nbsp; a c t &nbsp; i &nbsp; — &nbsp; *published*
+### [NATO — Neural Adaptive Training Optimizer](https://github.com/Malhar1912/NATO)
+`pip install nato-opt` · co-authored with Atharva Khambete · GPU/CUDA · MIT
 
-<br/>
+A custom PyTorch optimizer with three original regularization techniques, all built on existing forward passes — zero extra compute overhead.
 
-### &nbsp;&nbsp;&nbsp;**[NATO — Neural Adaptive Training Optimizer](https://github.com/Malhar1912/NATO)**
-
-<div align="center">
-
-> *there are optimizers, and then there are optimizers that filter their own gradients through an FFT.*
-
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;`pip install nato-opt` &nbsp;·&nbsp; co-authored with Atharva Khambete &nbsp;·&nbsp; GPU/CUDA native &nbsp;·&nbsp; MIT
-
-&nbsp;&nbsp;&nbsp;&nbsp;Three original techniques, zero extra forward-pass cost —
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Fourier Spectral Penalty** — regularises weights in the frequency domain, not the weight domain.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Kakeya Directional Penalty** — penalises gradient directions that are too consistent. force the model to explore.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**N-D FFT Gradient Filtering** — smooths high-frequency gradient noise before every step.
+| Technique | What it does |
+|---|---|
+| **Fourier Spectral Penalty** | Regularises model weights in frequency space, not weight space |
+| **Kakeya Directional Penalty** | Penalises gradient-direction consistency — forces exploratory updates |
+| **N-D FFT Gradient Filtering** | Low-pass filters the gradient signal before every optimizer step |
 
 ```python
 from nato_opt import NATOOptimizer, fourier_spectral_penalty, low_pass_filter_gradients
 
-optimizer  = NATOOptimizer(model.parameters(), lr=1e-3)
-fsp        = fourier_spectral_penalty(model, lambda_fsp=1e-6)
+optimizer = NATOOptimizer(model.parameters(), lr=1e-3)
+fsp       = fourier_spectral_penalty(model, lambda_fsp=1e-6)
 low_pass_filter_gradients(model, cutoff_ratio=0.5)
 optimizer.step(epoch)
 ```
 
-[![PyPI](https://img.shields.io/pypi/v/nato-opt?color=c8963e&style=flat-square&logo=pypi&logoColor=f5e6c8&label=nato-opt)](https://pypi.org/project/nato-opt/)
-![Python](https://img.shields.io/badge/python-3.8+-8b6914?style=flat-square)
-![CUDA](https://img.shields.io/badge/cuda-accelerated-76b900?style=flat-square&logo=nvidia&logoColor=white)
-
-<br/>
+[![PyPI](https://img.shields.io/pypi/v/nato-opt?style=flat-square&labelColor=0d0d1f&color=4a3f6b&logo=pypi&logoColor=b8c5d6)](https://pypi.org/project/nato-opt/)
+![](https://img.shields.io/badge/python-3.8+-2d2d4a?style=flat-square)
+![](https://img.shields.io/badge/CUDA-accelerated-0d1a0d?style=flat-square&logo=nvidia&logoColor=76b900)
 
 ---
 
-<br/>
+## Manuscripts
 
-## ✦ &nbsp; a c t &nbsp; i i &nbsp; — &nbsp; *manuscripts*
+### [GeoSDE-IDS — Geometric Stochastic Differential Intrusion Detection](https://github.com/Malhar1912/GeoSDE-IDS)
+Full Elsevier manuscript · CIC-IDS 2017 · NSL-KDD · UNSW-NB15 · 5 seeds · reproducibility checklist
 
-<br/>
+An IDS that models network traffic on **hyperbolic manifolds** (Poincaré Ball + Lorentz), using Neural SDEs to learn normal traffic dynamics — anomalies detected as geometric distortions in curved space, not threshold violations.
 
-### &nbsp;&nbsp;&nbsp;**[GeoSDE-IDS — Geometric Stochastic Differential Intrusion Detection](https://github.com/Malhar1912/GeoSDE-IDS)**
+Five detection signals running in parallel:
+- **Ollivier-Ricci Curvature** distortion
+- **Dirichlet Energy Functional** acceleration
+- **Möbius Invariance** violation
+- **Fokker-Planck Density** evolution via KL-Divergence
+- **SDE Drift** deviation
 
-<div align="center">
+Signals fused via meta-classifier (LR + MLP). LaTeX manuscript, benchmark CSVs, and figure generation scripts all committed.
 
-> *what if network traffic anomalies are not outliers in Euclidean space —  
-> but curvature distortions on a hyperbolic manifold?*
-
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;Full Elsevier manuscript (`paper/elsevier_manuscript.tex`). Three datasets. Five seeds. Reproducibility checklist.
-
-&nbsp;&nbsp;&nbsp;&nbsp;The detection engine runs **five geometric signals** simultaneously —
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;① Ollivier-Ricci Curvature distortion &nbsp;② Dirichlet Energy Functional acceleration  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③ Möbius Invariance violation &nbsp;④ Fokker-Planck Density evolution (KL-Divergence)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑤ SDE Drift Deviation
-
-&nbsp;&nbsp;&nbsp;&nbsp;Fused via meta-classifier (LR + MLP). Benchmarked on CIC-IDS 2017, NSL-KDD, UNSW-NB15.
-
-![Python](https://img.shields.io/badge/python-stochastic%20geometry-8b6914?style=flat-square)
-![TeX](https://img.shields.io/badge/LaTeX-manuscript-c8963e?style=flat-square&logo=latex&logoColor=white)
-![Datasets](https://img.shields.io/badge/datasets-3%20×%205%20seeds-6b3a1f?style=flat-square)
-
-<br/>
-
-### &nbsp;&nbsp;&nbsp;**[TCR — Threshold-Constrained Replay Framework](https://github.com/Malhar1912/Threshold-Constrained-Replay-TCR-A-Constrained-Multi-Objective-Replay-Framework)**
-
-<div align="center">
-
-> *experience replay, but as a constrained stochastic resource allocation problem.  
-> prioritized replay never asked why it was doing the ranking.*
-
-</div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;Seven phases. Formal objectives. Ablation gates. The optimisation problem at its heart:
-
-$$\max_{q \in \Delta}\ \mathbb{E}_{\tau \sim q}[\Delta \mathcal{L}(\tau)] \quad \text{s.t.} \quad \mathrm{KL}(q \| p) \le \varepsilon, \quad |D^*| \le B$$
-
-&nbsp;&nbsp;&nbsp;&nbsp;Phase 0.4 validation must pass (ρ > 0.3, p < 0.05, ≥80% of envs) before Phases 1–7 proceed.  
-&nbsp;&nbsp;&nbsp;&nbsp;Benchmarks against PER, DreamerV3 native, Uniform Replay — Atari-100k · DMC · Procgen.
-
-![Python](https://img.shields.io/badge/python-reinforcement%20learning-8b6914?style=flat-square)
-![Status](https://img.shields.io/badge/status-in%20progress-c8963e?style=flat-square)
-
-<br/>
+![](https://img.shields.io/badge/Python%20·%20TeX%20·%20Elsevier-manuscript-2d2d4a?style=flat-square)
+![](https://img.shields.io/badge/3%20datasets%20·%205%20seeds-reproduced-4a3f6b?style=flat-square)
 
 ---
 
-<br/>
+### [TCR — Threshold-Constrained Replay Framework](https://github.com/Malhar1912/Threshold-Constrained-Replay-TCR-A-Constrained-Multi-Objective-Replay-Framework)
+RL research paper in progress · 7-phase formal specification · ablation protocols · validation gates
 
-## ✦ &nbsp; a c t &nbsp; i i i &nbsp; — &nbsp; *interactive*
+Reframes experience replay as a **constrained stochastic resource allocation problem** — not a ranking problem. The core objective:
 
-<br/>
+$$\max_{q \in \Delta}\ \mathbb{E}_{\tau \sim q}\bigl[\Delta\mathcal{L}(\tau)\bigr] \quad \text{s.t.} \quad \mathrm{KL}(q\,\|\,p) \le \varepsilon,\quad |D^*| \le B$$
 
-<table>
-<tr>
-<td width="50%" valign="top">
+Phase 0.4 is a mandatory validation gate — ρ > 0.3, p < 0.05, across ≥80% of environments — before any subsequent phase proceeds. Benchmarks against PER, DreamerV3, and Uniform Replay on Atari-100k, DMC, and Procgen.
 
-### &nbsp;[SAT Solver](https://github.com/Malhar1912/SAT_Solver)
+![](https://img.shields.io/badge/reinforcement%20learning-constrained%20optimization-2d2d4a?style=flat-square)
+![](https://img.shields.io/badge/status-in%20progress-4a3f6b?style=flat-square)
 
-> *formal methods, made visible.*
+---
 
-DPLL with unit propagation and pure literal elimination — rendered as a live decision tree. Green = satisfiable. Red = contradiction.  
-Watch NP-complete problems sweat in real time.
+## Formal Methods
 
-`Python` · `networkx` · `MIT`
+### [SAT Solver — DPLL with Live Decision Tree Visualization](https://github.com/Malhar1912/SAT_Solver)
+Full DPLL implementation with unit propagation and pure literal elimination. Random k-CNF generator for stress testing. Real-time decision tree rendered via `networkx` + `matplotlib` — green nodes for satisfiable paths, red for conflict. The algorithm made visible.
 
-</td>
-<td width="50%" valign="top">
+`Python` · `MIT`
 
-### &nbsp;[Halting Problem Simulation](https://github.com/Malhar1912/Halting_Problem_Simulation) · [↗](https://halting-problem-simulation.vercel.app)
-
-> *the proof you send when someone asks why we can't just verify everything.*
-
-Cyberpunk React app. Animated REBEL paradox walkthrough. Formal proof. Turing, Church, Gödel citations. AGI implications. Deployed.
+### [Halting Problem Simulation](https://github.com/Malhar1912/Halting_Problem_Simulation) · [↗ Live](https://halting-problem-simulation.vercel.app)
+Interactive formal proof of undecidability. Animated REBEL paradox walkthrough. Step-by-step contradiction. Academic references to Turing, Church, and Gödel. Cyberpunk React app, deployed.
 
 `TypeScript` · `Framer Motion` · `Vercel`
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+---
 
-### &nbsp;[Q-Shield](https://github.com/Malhar1912/Q-Shield-Quaternionic-Key-Exchange-Explorer) · [↗](https://q-shield-quaternionic-key-exchange.vercel.app)
+## Deployed
 
-> *key exchange over ℍ, because elliptic curves felt too comfortable.*
-
-Interactive post-quantum cryptography explorer built on quaternion algebra. TypeScript, deployed to production.
-
-`TypeScript` · `Abstract Algebra` · `Vercel`
-
-</td>
-<td width="50%" valign="top">
-
-### &nbsp;[LT-Graph](https://github.com/Malhar1912/LT-Graph) · [↗](https://lt-graph.vercel.app)
-
-> *graph theory with a simulation layer and a Gemini-powered brain.*
-
-Interactive traversal toolkit. Components, services, simulation, tests — all there. Deployed.
-
-`TypeScript` · `Gemini API` · `Vite`
-
-</td>
-</tr>
-</table>
-
-<br/>
+| Project | Description | Stack |
+|---|---|---|
+| [Q-Shield](https://github.com/Malhar1912/Q-Shield-Quaternionic-Key-Exchange-Explorer) · [↗](https://q-shield-quaternionic-key-exchange.vercel.app) | Post-quantum key exchange explorer built on quaternion algebra — ℍ-based cryptographic primitives beyond standard ECC | TypeScript · Vercel |
+| [LT-Graph](https://github.com/Malhar1912/LT-Graph) · [↗](https://lt-graph.vercel.app) | Interactive graph traversal toolkit with simulation layer and Gemini API integration | TypeScript · Vite |
 
 ---
 
-<br/>
-
-## ✦ &nbsp; s t a c k
+## Stack
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-2a1200?style=for-the-badge&logo=python&logoColor=c8963e)
-![TypeScript](https://img.shields.io/badge/TypeScript-2a1200?style=for-the-badge&logo=typescript&logoColor=c8963e)
-![PyTorch](https://img.shields.io/badge/PyTorch-2a1200?style=for-the-badge&logo=pytorch&logoColor=c8963e)
-![React](https://img.shields.io/badge/React-2a1200?style=for-the-badge&logo=react&logoColor=c8963e)
-![C++](https://img.shields.io/badge/C++-2a1200?style=for-the-badge&logo=cplusplus&logoColor=c8963e)
-![Rust](https://img.shields.io/badge/Rust-2a1200?style=for-the-badge&logo=rust&logoColor=c8963e)
-![LaTeX](https://img.shields.io/badge/LaTeX-2a1200?style=for-the-badge&logo=latex&logoColor=c8963e)
-![CUDA](https://img.shields.io/badge/CUDA-2a1200?style=for-the-badge&logo=nvidia&logoColor=c8963e)
+![](https://img.shields.io/badge/Python-0d0d1f?style=for-the-badge&logo=python&logoColor=b8c5d6)
+![](https://img.shields.io/badge/TypeScript-0d0d1f?style=for-the-badge&logo=typescript&logoColor=b8c5d6)
+![](https://img.shields.io/badge/PyTorch-0d0d1f?style=for-the-badge&logo=pytorch&logoColor=b8c5d6)
+![](https://img.shields.io/badge/React-0d0d1f?style=for-the-badge&logo=react&logoColor=b8c5d6)
+![](https://img.shields.io/badge/C++-0d0d1f?style=for-the-badge&logo=cplusplus&logoColor=b8c5d6)
+![](https://img.shields.io/badge/Rust-0d0d1f?style=for-the-badge&logo=rust&logoColor=b8c5d6)
+![](https://img.shields.io/badge/LaTeX-0d0d1f?style=for-the-badge&logo=latex&logoColor=b8c5d6)
+![](https://img.shields.io/badge/CUDA-0d0d1f?style=for-the-badge&logo=nvidia&logoColor=76b900)
 
 </div>
 
-<br/>
-
 ---
 
-<br/>
-
-## ✦ &nbsp; s t a t s
+## Stats
 
 <div align="center">
 
-<img height="172em" src="https://github-readme-stats.vercel.app/api?username=Malhar1912&show_icons=true&hide_border=true&bg_color=120800&title_color=c8963e&icon_color=8b6914&text_color=f5e6c8&include_all_commits=true&count_private=true"/>
-<img height="172em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Malhar1912&layout=compact&langs_count=7&hide_border=true&bg_color=120800&title_color=c8963e&text_color=f5e6c8&hide=html,css"/>
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=Malhar1912&show_icons=true&hide_border=true&bg_color=0a0a14&title_color=b8c5d6&icon_color=4a3f6b&text_color=7a8fa6&include_all_commits=true&count_private=true"/>
+<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Malhar1912&layout=compact&langs_count=7&hide_border=true&bg_color=0a0a14&title_color=b8c5d6&text_color=7a8fa6&hide=html,css"/>
 
 </div>
 
 <div align="center">
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=Malhar1912&hide_border=true&background=120800&dates=8b6914&ring=c8963e&fire=f5e6c8&currStreakNum=f5e6c8&sideNums=f5e6c8&currStreakLabel=c8963e&sideLabels=c8963e)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=Malhar1912&hide_border=true&background=0a0a14&dates=4a5568&ring=4a3f6b&fire=7a8fa6&currStreakNum=b8c5d6&sideNums=b8c5d6&currStreakLabel=7a8fa6&sideLabels=7a8fa6)](https://git.io/streak-stats)
 
 </div>
 
-<br/>
-
----
-
-<br/>
-
 <div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2a1a3e,50:1a1a3e,100:0a0a14&height=120&section=footer&animation=fadeIn" width="100%"/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:c8963e,40:6b3a1f,70:3d1a00,100:1a0a00&height=130&section=footer&animation=fadeIn" width="100%"/>
-
-<br/>
-
-*∿ &nbsp; build something that shouldn't exist yet &nbsp; ∿*
-
-<br/>
-
-![Profile Views](https://komarev.com/ghpvc/?username=Malhar1912&color=c8963e&style=flat-square&label=visitors)
-
+![](https://komarev.com/ghpvc/?username=Malhar1912&color=4a3f6b&style=flat-square&label=)
 </div>

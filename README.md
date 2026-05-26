@@ -1,18 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a14,20:0d0e24,50:151530,80:1a1540,100:231a52&height=260&section=header&text=MALHAR%20PANGARKAR&fontSize=62&fontColor=c4cfe0&fontAlignY=38&desc=❝%20I%20did%20not%20come%20this%20far%2C%20to%20only%20come%20this%20far.%20And%20I%20have%20come%20very%20far.%20❞&descAlignY=60&descSize=13&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a14,20:0d0e24,50:151530,80:1a1540,100:231a52&height=260&section=header&text=MALHAR%20PANGARKAR&fontSize=62&fontColor=c4cfe0&fontAlignY=38&desc=❝%20I%20have%20worked%20and%20I%20have%20suffered%2C%20and%20I%20refuse%20to%20let%20that%20be%20a%20footnote.%20❞&descAlignY=60&descSize=13&animation=fadeIn" width="100%"/>
 
 </div>
 
 <div align="center">
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=IM+Fell+English&weight=400&size=18&pause=1400&color=7a8fa6&center=true&vCenter=true&width=800&lines=researcher.+optimizer.+the+one+who+stayed+up+to+finish+it.;published+on+PyPI+%C2%B7+submitted+to+Elsevier+%C2%B7+deployed+to+production.;29+repositories.+most+of+them+classified.)](https://git.io/typing-svg)
-
-</div>
-
-<div align="center">
-
-[![](https://img.shields.io/badge/─────────────────────────────────────────────────────-0a0a14?style=flat-square&labelColor=0a0a14&color=0a0a14)]()
 
 </div>
 
@@ -27,13 +21,6 @@
 ---
 
 <div align="center">
-<table><tr><td>
-
-```
-██████████████████████████████████████████████████████████████████████
-░░░░░░░░░░░░░░░░░░  CURRICULUM VITAE IN EXTREMIS  ░░░░░░░░░░░░░░░░░░░
-██████████████████████████████████████████████████████████████████████
-```
 
 ```python
 pangarkar = {
@@ -55,12 +42,11 @@ pangarkar = {
 }
 ```
 
-</td></tr></table>
 </div>
 
 ---
 
-## ⬛ I. PUBLISHED WORK — *of which the world is perhaps not yet worthy*
+## I. PUBLISHED WORK — *of which the world is perhaps not yet worthy*
 
 ---
 
@@ -97,7 +83,7 @@ optimizer.step(epoch)
 
 ---
 
-## ⬛ II. MANUSCRIPTS — *circulating in learned journals, as is appropriate*
+## II. MANUSCRIPTS — *circulating in learned journals, as is appropriate*
 
 ---
 
@@ -140,7 +126,7 @@ Phase 0.4 functions as a mandatory validation gate — the proxy approximation v
 
 ---
 
-## ⬛ III. FORMAL METHODS — *in which undecidability is confronted directly*
+## III. FORMAL METHODS — *in which undecidability is confronted directly*
 
 ---
 
@@ -164,7 +150,7 @@ A cyberpunk-aesthetic React application that walks the visitor through the forma
 
 ---
 
-## ⬛ IV. DEPLOYED APPLICATIONS — *extant on the internet, for inspection*
+## IV. DEPLOYED APPLICATIONS — *extant on the internet, for inspection*
 
 ---
 
@@ -185,7 +171,7 @@ An interactive graph traversal and visualisation toolkit, equipped with a simula
 
 ---
 
-## ⬛ V. TECHNICAL ARSENAL — *accumulated over years of inadvisable ambition*
+## V. TECHNICAL ARSENAL — *accumulated over years of inadvisable ambition*
 
 <div align="center">
 
@@ -206,7 +192,7 @@ An interactive graph traversal and visualisation toolkit, equipped with a simula
 
 ---
 
-## ⬛ VI. STATISTICS — *the accountancy of obsession*
+## VI. STATISTICS — *the accountancy of obsession*
 
 <div align="center">
 

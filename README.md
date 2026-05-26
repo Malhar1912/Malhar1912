@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a14,20:0d0e24,50:151530,80:1a1540,100:231a52&height=260&section=header&text=MALHAR%20PANGARKAR&fontSize=62&fontColor=c4cfe0&fontAlignY=38&desc=❝%20I%20have%20worked%20and%20I%20have%20suffered%2C%20and%20I%20refuse%20to%20let%20that%20be%20a%20footnote.%20❞&descAlignY=60&descSize=13&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a14,20:0d0e24,50:151530,80:1a1540,100:231a52&height=260&section=header&text=MALHAR%20PANGARKAR&fontSize=62&fontColor=c4cfe0&fontAlignY=38&desc=❝%20What%20I%20do%20is%20impulsive%2C%20capricious%2C%20and%20melodramatic...%20but%20it%20is%20also%20wrong.%20❞&descAlignY=60&descSize=13&animation=fadeIn" width="100%"/>
 
 </div>
 
@@ -20,8 +20,6 @@
 
 ---
 
-<div align="center">
-
 ```python
 pangarkar = {
     "designation"    : "Researcher · Optimizer · Deployer of Inadvisably Complex Systems",
@@ -36,17 +34,14 @@ pangarkar = {
     "output_formats" : ["PyPI packages", "Elsevier manuscripts", "deployed Vercel apps",
                         "RL frameworks with 7-phase validation gates", "proofs"],
     "status"         : "building at the outer perimeter of what is tractable",
-    "co_conspirators": ["Atharva Khambete"],
     "repositories"   : 29,
     "sleeping"       : False,
 }
 ```
 
-</div>
-
 ---
 
-## I. PUBLISHED WORK — *of which the world is perhaps not yet worthy*
+## I. PUBLISHED WORK — *pip install nato-opt. go on. I'll wait. take your time. no rush. I've only been awake for 38 hours.*
 
 ---
 
@@ -56,9 +51,8 @@ pangarkar = {
 ![](https://img.shields.io/badge/python-3.8+-1a1a3e?style=flat-square)
 ![](https://img.shields.io/badge/CUDA-GPU%20accelerated-0d1a0d?style=flat-square&logo=nvidia&logoColor=76b900)
 ![](https://img.shields.io/badge/license-MIT-2e2a52?style=flat-square)
-![](https://img.shields.io/badge/co--authored-Atharva%20Khambete-2e2a52?style=flat-square)
 
-A bespoke PyTorch optimizer of considerable audacity, published to PyPI and installable by anyone with the requisite discernment. Co-authored with Atharva Khambete. Three original regularization mechanisms, each operating atop existing forward passes — contributing precisely zero additional computational overhead, which is the kind of elegance one simply does not encounter enough of.
+A bespoke PyTorch optimizer of considerable audacity, published to PyPI and installable by anyone with the requisite discernment. Three original regularization mechanisms, each operating atop existing forward passes — contributing precisely zero additional computational overhead, which is the kind of elegance one simply does not encounter enough of.
 
 ```
 pip install nato-opt
@@ -83,7 +77,7 @@ optimizer.step(epoch)
 
 ---
 
-## II. MANUSCRIPTS — *circulating in learned journals, as is appropriate*
+## II. MANUSCRIPTS — *formally submitted. informally spiralling. the manifold is fine. I am fine.*
 
 ---
 
@@ -126,7 +120,7 @@ Phase 0.4 functions as a mandatory validation gate — the proxy approximation v
 
 ---
 
-## III. FORMAL METHODS — *in which undecidability is confronted directly*
+## III. FORMAL METHODS — *built a SAT solver and a paradox visualiser in the same month. I am not okay but the code is.*
 
 ---
 
@@ -150,7 +144,7 @@ A cyberpunk-aesthetic React application that walks the visitor through the forma
 
 ---
 
-## IV. DEPLOYED APPLICATIONS — *extant on the internet, for inspection*
+## IV. DEPLOYED APPLICATIONS — *live on the internet. you can click them. they work. I was surprised too.*
 
 ---
 
@@ -171,7 +165,7 @@ An interactive graph traversal and visualisation toolkit, equipped with a simula
 
 ---
 
-## V. TECHNICAL ARSENAL — *accumulated over years of inadvisable ambition*
+## V. TECHNICAL ARSENAL — *tools don't make the craftsman. but they do make the craftsman faster, and sleep-deprived, and dangerous.*
 
 <div align="center">
 
@@ -192,7 +186,7 @@ An interactive graph traversal and visualisation toolkit, equipped with a simula
 
 ---
 
-## VI. STATISTICS — *the accountancy of obsession*
+## VI. STATISTICS — *vanity metrics for the discerning narcissist*
 
 <div align="center">
 

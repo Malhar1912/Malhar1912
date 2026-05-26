@@ -27,7 +27,6 @@ malhar = {
     ],
     "ships"     : "production code, PyPI packages, deployed apps — not just notebooks",
     "philosophy": "Build things at the edge of what's tractable. Then push the edge.",
-    "coauthor"  : "Atharva Khambete",
 }
 ```
 

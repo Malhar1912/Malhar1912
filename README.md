@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=IM+Fell+English&weight=400&size=18&pause=1400&color=7a8fa6&center=true&vCenter=true&width=800&lines=researcher.+optimizer.+the+one+who+stayed+up+to+finish+it.;published+on+PyPI+%C2%B7+submitted+to+Elsevier+%C2%B7+deployed+to+production.;29+repositories.+most+of+them+classified.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=IM+Fell+English&weight=400&size=18&pause=1400&color=7a8fa6&center=true&vCenter=true&width=800&lines=researcher.+optimizer.+the+one+who+stayed+up+to+finish+it.;published+on+PyPI+%C2%B7+submitted+to+Elsevier+%C2%B7+deployed+to+production.;51+repositories.+most+of+them+classified.)](https://git.io/typing-svg)
 
 </div>
 
@@ -34,7 +34,7 @@ pangarkar = {
     "output_formats" : ["PyPI packages", "Elsevier manuscripts", "deployed Vercel apps",
                         "RL frameworks with 7-phase validation gates", "proofs"],
     "status"         : "building at the outer perimeter of what is tractable",
-    "repositories"   : 29,
+    "repositories"   : 51,
     "sleeping"       : False,
 }
 ```
